@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste de nível grátis · Descubra o seu nível de inglês</title>
+<meta name="description" content="Descubra o seu nível de inglês, do A1 ao C1, em 2 minutos. Grátis e sem cadastro. Por Shelton Santos.">
+<meta property="og:title" content="Teste de nível de inglês grátis">
+<meta property="og:description" content="15 perguntas, 2 minutos, do A1 ao C1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<script>
+  /* ==== EDITE AQUI ==== */
+  const LINK_GRUPO = "https://chat.whatsapp.com/EEcDF2jhVaB60EmEh1KaWg";   // link de convite do grupo VIP do WhatsApp
+  const DATA_ABERTURA = "quarta, dia 18";
+  /* ==================== */
+</script>
+<style>
+:root{--bg:#FBF6F3;--ink:#2A2340;--soft:#6B6280;--line:#EADFE3;--blush:#F6DDE1;--rosa:#D97B8F;--denim:#4E6E9E;--denimS:#E3EAF5;--gold:#DDB066;--goldS:#F5E8CF;--green:#3F7D5C}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--denim);background-image:radial-gradient(rgba(255,255,255,.13) 1.2px,transparent 1.3px);background-size:22px 22px;min-height:100vh;line-height:1.5;font-size:17px}
+.h{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
+.kick{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase}
+.shell{max-width:560px;margin:0 auto;padding:22px 16px 40px}
+.top{display:flex;justify-content:space-between;align-items:center;color:#FBF6F3;margin-bottom:18px}
+.top .h{font-size:19px;color:#FBF6F3}
+.top .h span{color:var(--gold)}
+.card{background:var(--bg);border-radius:26px;padding:28px 24px;box-shadow:0 10px 0 #2A2340}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:0 22px;border:0;border-radius:999px;background:var(--ink);color:#FBF6F3;font:700 17px 'Figtree',sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 6px 0 var(--rosa)}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--rosa)}
+.btn.gold{background:var(--gold);color:var(--ink);box-shadow:0 6px 0 var(--ink)}
+.btn.green{background:#2F6B4D;box-shadow:0 6px 0 var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.swoosh{display:block;margin:12px 0 0}
+.lead{color:var(--soft);margin:16px 0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{background:var(--denimS);color:var(--denim);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.bar{flex:1;height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rosa),var(--gold));border-radius:99px;transition:width .3s}
+.count{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--soft);min-width:44px;text-align:right}
+.q{font-size:22px;margin:6px 0 6px}
+.qpt{color:var(--soft);font-size:15px;margin:0 0 18px}
+.opts{display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:54px;text-align:left;padding:12px 16px;border-radius:16px;border:2px solid var(--line);background:#fff;font:600 17px 'Figtree',sans-serif;color:var(--ink);cursor:pointer}
+.opt .l{flex:none;width:28px;height:28px;border-radius:50%;background:var(--denimS);color:var(--denim);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.opt.sel{border-color:var(--denim);background:var(--denimS)}
+.opt.sel .l{background:var(--denim);color:#fff}
+.nav{display:flex;gap:10px}
+.nav .back{flex:0 0 auto;width:auto;background:transparent;color:var(--soft);box-shadow:none;border:2px solid var(--line)}
+.lvl{display:flex;align-items:center;gap:16px;margin:16px 0 8px}
+.badge{flex:none;width:92px;height:92px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;border:5px solid var(--goldS);transform:rotate(-6deg)}
+.badge b{font-family:'Bricolage Grotesque',sans-serif;font-size:36px;line-height:1}
+.badge small{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.box{background:#fff;border-radius:18px;padding:18px;margin:18px 0}
+.box .kick{color:#9C3B55}
+.task{display:flex;gap:12px;align-items:flex-start;margin-top:10px;font-weight:600}
+.task .ck{flex:none;width:22px;height:22px;border:2px solid #B4ABC4;border-radius:6px;margin-top:2px}
+.can{margin:12px 0 0;padding-left:20px;color:var(--soft)}
+.can li{margin-bottom:4px}
+.vip{background:var(--ink);color:#FBF6F3;border-radius:20px;padding:22px;margin-top:20px}
+.vip p{color:#E3EAF5;margin:8px 0 18px}
+.note{font-size:13px;color:var(--soft);margin-top:18px;text-align:center}
+.foot{text-align:center;color:#E3EAF5;font-size:14px;margin-top:26px}
+.foot a{color:#FBF6F3}
+.hide{display:none}
+.score{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--soft);font-weight:700}
+.restart{background:none;border:0;color:var(--denim);font:600 15px 'Figtree',sans-serif;text-decoration:underline;cursor:pointer;margin-top:14px;width:100%}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top"><span class="h">Planner de <span>Imersão</span></span><span class="kick" style="color:var(--goldS)">Teste grátis</span></div>
+
+  <!-- INÍCIO -->
+  <section id="s-start" class="card">
+    <div class="kick" style="color:#9C3B55">Teste de nível · do A1 ao C1</div>
+    <h1 class="h" style="font-size:40px;margin-top:12px">Descubra o seu nível de inglês em 2 minutos</h1>
+    <svg class="swoosh" width="180" height="12" viewBox="0 0 180 12" aria-hidden="true"><path d="M3 9 Q 90 1 177 7" fill="none" stroke="#D97B8F" stroke-width="5" stroke-linecap="round"/></svg>
+    <p class="lead">Responda sem pesquisar e sem pensar demais. Se não souber, escolha a que parecer mais certa. No final, você vê o seu nível e a primeira atividade pra fazer hoje.</p>
+    <div class="facts"><span class="chip">15 perguntas</span><span class="chip">2 minutos</span><span class="chip">Sem cadastro</span></div>
+    <button class="btn gold" id="go">Começar o teste</button>
+    <p class="note">Por Shelton Santos · @inglescomshelton</p>
+  </section>
+
+  <!-- PERGUNTAS -->
+  <section id="s-quiz" class="card hide">
+    <div class="prog"><div class="bar"><i id="bar"></i></div><span class="count" id="count">1/15</span></div>
+    <div class="kick" id="qkick" style="color:var(--denim)">Complete a frase</div>
+    <h2 class="h q" id="qtext"></h2>
+    <p class="qpt" id="qpt"></p>
+    <div class="opts" id="opts"></div>
+    <div class="nav">
+      <button class="btn back" id="back" aria-label="Voltar para a pergunta anterior">←</button>
+      <button class="btn" id="next" disabled>Próxima</button>
+    </div>
+  </section>
+
+  <!-- RESULTADO -->
+  <section id="s-result" class="card hide">
+    <div class="kick" style="color:#9C3B55">O seu resultado</div>
+    <div class="lvl">
+      <div class="badge" id="rbadge"><b id="rlv">A1</b><small>nível</small></div>
+      <div>
+        <h2 class="h" style="font-size:30px" id="rname">Primeiros Contatos</h2>
+        <div class="score" id="rscore"></div>
+      </div>
+    </div>
+    <p style="margin:12px 0 0" id="rdesc"></p>
+    <ul class="can" id="rcan"></ul>
+
+    <div class="box">
+      <div class="kick">Sua primeira caixinha · faça hoje</div>
+      <div class="task"><span class="ck" aria-hidden="true"></span><span id="rtask"></span></div>
+      <p style="margin:10px 0 0;font-size:14px;color:var(--soft)">Leva de 15 a 30 minutos. Esse é o tipo de atividade do Planner de Imersão: uma por dia, no seu nível.</p>
+    </div>
+
+    <div class="vip">
+      <div class="h" style="font-size:24px;color:#FBF6F3">Quer a trilha completa do seu nível?</div>
+      <p>O Planner de Imersão abre <b style="color:var(--gold)" id="rdata"></b>, com 90 caixinhas para cada nível. O link sai primeiro no grupo VIP, com um presente para quem comprar nas primeiras 24h.</p>
+      <a class="btn green" id="rgrupo" href="#" target="_blank" rel="noopener">Entrar no grupo VIP</a>
+    </div>
+
+    <p class="note">📸 Tira um print do seu resultado e me marca no Instagram: <b>@inglescomshelton</b></p>
+    <p class="note" style="margin-top:6px">Este é um teste rápido: ele dá uma estimativa do seu nível, não um certificado.</p>
+    <button class="restart" id="again">Refazer o teste</button>
+  </section>
+
+  <p class="foot">Feito por Shelton Santos · <a href="https://www.instagram.com/inglescomshelton/">@inglescomshelton</a></p>
+</div>
+
+<script>
+const Q = [
+  {k:"Complete a frase", t:"Hi! My name ___ Ana.", o:["am","is","are","be"], a:1},
+  {k:"Escolha a tradução", t:"Como se diz: “Eu tenho 25 anos.”", o:["I have 25 years.","I am 25 years old.","I'm 25 years.","I has 25 years old."], a:1},
+  {k:"Complete a frase", t:"___ you like coffee?", o:["Are","Does","Do","Is"], a:2},
+  {k:"Complete a frase", t:"Last weekend I ___ to the beach with my family.", o:["go","gone","going","went"], a:3},
+  {k:"Complete a frase", t:"Look! It ___ outside. Take an umbrella.", o:["is raining","rains","rain","raining"], a:0},
+  {k:"Complete a frase", t:"My sister is ___ than me.", o:["more tall","tallest","taller","the taller"], a:2},
+  {k:"Complete a frase", t:"I ___ in this city since 2019.", o:["live","have lived","lived","am living"], a:1},
+  {k:"Complete a frase", t:"If I ___ more time, I would travel more.", o:["had","have","will have","would have"], a:0},
+  {k:"Escolha a forma correta", t:"Could you tell me where ___?", o:["is the station","does the station is","the station is","the station does be"], a:2},
+  {k:"Complete a frase", t:"By the time we got to the cinema, the film ___.", o:["already started","has already started","was already start","had already started"], a:3},
+  {k:"Complete a frase", t:"I'd rather you ___ smoke in here.", o:["didn't","don't","not","won't"], a:0},
+  {k:"Complete a frase", t:"She's really good at ___ people feel welcome.", o:["doing","making","getting","letting"], a:1},
+  {k:"Complete a frase", t:"___ had I arrived than the phone rang.", o:["Hardly","As soon","No sooner","Scarcely"], a:2},
+  {k:"Complete a frase", t:"The proposal was rejected, ___ came as no surprise to anyone.", o:["what","that","it","which"], a:3},
+  {k:"Escolha a palavra", t:"His explanation was so ___ that nobody could follow it.", o:["convoluted","concise","candid","compelling"], a:0}
+];
+const L = {
+  A1:{n:"Primeiros Contatos", c:"#3F7D5C", d:"Você está dando os primeiros passos. O foco agora é acostumar o ouvido e aprender as frases do dia a dia, sem medo de errar.", can:["Se apresentar e falar de você","Entender frases simples e devagar","Montar um vocabulário da sua rotina"], t:"Mude o idioma do celular para inglês."},
+  A2:{n:"Construindo Bases", c:"#4E6E9E", d:"Você já entende o básico. Agora é hora de contar histórias, falar do passado e ganhar segurança nas conversas simples.", can:["Contar o que você fez","Falar de rotina, gostos e planos","Entender conversas curtas do dia a dia"], t:"Conte o que você fez ontem em 5 frases."},
+  B1:{n:"Ganhando Confiança", c:"#9C3B55", d:"Você se vira bem, mas ainda trava em alguns momentos. O próximo passo é falar mais, opinar e entender inglês em velocidade real.", can:["Dar a sua opinião com exemplos","Falar de trabalho, estudos e experiências","Entender séries com legenda em inglês"], t:"Responda em voz alta: “Tell me about yourself.”"},
+  B2:{n:"Ganhando Fluência", c:"#8A6222", d:"Você já conversa sobre muitos assuntos. Agora é refinar: notícias, vocabulário mais preciso e mais naturalidade ao falar.", can:["Discutir notícias e temas atuais","Entender a maioria dos vídeos e podcasts","Escrever e falar com mais precisão"], t:"Leia uma notícia em inglês e conte o que entendeu num áudio."},
+  C1:{n:"Imersão Plena", c:"#6E5A96", d:"Você tem um inglês avançado. O foco é manter o inglês vivo e trabalhar nuance: argumentação, estilo e inglês profissional.", can:["Argumentar e defender ideias","Entender ironia, humor e nuances","Usar o inglês no trabalho e nos estudos"], t:"Assista a um debate em inglês e anote os argumentos de cada lado."}
+};
+const $ = id => document.getElementById(id);
+let i = 0, ans = new Array(Q.length).fill(null);
+function show(s){ ["s-start","s-quiz","s-result"].forEach(x=>$(x).classList.toggle("hide", x!==s)); window.scrollTo(0,0); }
+function render(){
+  const q = Q[i];
+  $("qkick").textContent = q.k;
+  $("qtext").textContent = q.t;
+  $("qpt").textContent = "";
+  $("count").textContent = (i+1)+"/"+Q.length;
+  $("bar").style.width = (i/Q.length*100)+"%";
+  const box = $("opts"); box.innerHTML = "";
+  q.o.forEach((txt,j)=>{
+    const b = document.createElement("button");
+    b.className = "opt"+(ans[i]===j?" sel":"");
+    b.innerHTML = '<span class="l">'+"ABCD"[j]+'</span><span></span>';
+    b.lastChild.textContent = txt;
+    b.onclick = ()=>{ ans[i]=j; render(); };
+    box.appendChild(b);
+  });
+  $("next").disabled = ans[i]===null;
+  $("next").textContent = i===Q.length-1 ? "Ver meu resultado" : "Próxima";
+  $("back").style.visibility = i===0 ? "hidden" : "visible";
+}
+function result(){
+  const s = ans.reduce((t,a,k)=>t+(a===Q[k].a?1:0),0);
+  const lv = s<=3?"A1":s<=6?"A2":s<=9?"B1":s<=12?"B2":"C1";
+  const d = L[lv];
+  $("rlv").textContent = lv; $("rbadge").style.background = d.c;
+  $("rname").textContent = d.n; $("rname").style.color = d.c;
+  $("rscore").textContent = s+" de "+Q.length+" acertos";
+  $("rdesc").textContent = d.d;
+  $("rcan").innerHTML = ""; d.can.forEach(c=>{const li=document.createElement("li"); li.textContent=c; $("rcan").appendChild(li);});
+  $("rtask").textContent = d.t;
+  $("rdata").textContent = DATA_ABERTURA;
+  const g = $("rgrupo");
+  if (LINK_GRUPO && LINK_GRUPO.indexOf("http")===0) { g.href = LINK_GRUPO; }
+  else { g.href = "https://www.instagram.com/inglescomshelton/"; g.textContent = "Me chama no Instagram"; }
+  show("s-result");
+}
+$("go").onclick = ()=>{ i=0; show("s-quiz"); render(); };
+$("next").onclick = ()=>{ if(ans[i]===null) return; if(i<Q.length-1){ i++; render(); window.scrollTo(0,0);} else result(); };
+$("back").onclick = ()=>{ if(i>0){ i--; render(); } };
+$("again").onclick = ()=>{ ans = new Array(Q.length).fill(null); i=0; show("s-start"); };
+</script>
+</body>
+</html>
